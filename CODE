@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class LabProgram {
+   public static void main(String[] args) {
+      Scanner scnr = new Scanner(System.in);
+
+      int quarter =scnr.nextInt();
+
+      int dime = scnr.nextInt();
+
+      int nickel = scnr.nextInt();
+
+      int penny = scnr.nextInt();
+
+      double dollars = quarter * 0.25 + dime * 0.1 + nickel * 0.05 + penny * 0.01;
+
+      System.out.printf("Amount: $%.2f\n", dollars);
+
+   }
+}
